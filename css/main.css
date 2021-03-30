@@ -57,6 +57,10 @@ ul{
     margin-right: 100px !important;
 } 
 
+.nav-tabs{
+    border-bottom:1px solid black;
+}
+
 .vl{
     border-left: 2px solid #ccc;
     min-height: 305px;
