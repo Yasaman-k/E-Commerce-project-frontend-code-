@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خرید آنلاین قطعات رباتیک</title>
+    <title>سبد خرید</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- <link rel="stylesheet" href="fontaw/css/font-awesome.min.css"> -->
     <link href="fontaw/css/all.css" rel="stylesheet">
@@ -117,29 +117,97 @@
 
     <section class="mbr-section mbr-after-navbar mt-3 mb-5" style="padding-top: 0;padding-bottom:0">
         <div class="container">    
-            <div class="col-md-12 col-xl-10 m-auto  ">
-                <div class="row">
-                  <div class="col-md-3 px-3">
-                  </div>
+            <div class="col-md-12 col-xl-10 m-auto">
+                <h2>سبد خرید</h2>
+                <hr>
 
-                  <div class="col-md-9">                   
+                <div id="cart_desktop_view" class="row table-responsive">
+                  <table class="table">
+                    <thead>
+                          <tr>
+                              <th>محصول</th>
+                              <th>قیمت</th>
+                              <th class="text-xs-left">تعداد</th>
+                              <!-- <th>&nbsp;</th> -->
+                          </tr>
+                    </thead>
 
-                  </div>
-                </div>
+                    <tbody>
+                      <tr class="common-font-size cart_item_135934" id="cart_item_135934">
+                        <td>
+                          <div class="row shopping-cart-table-initial">
+                         
+                            <div class="col-md-2">
+                              <a href="https://sproboticworks.com/shop/codey">
+                              <img src="https://storage.googleapis.com/sproboticworks/master/assets/images/products/01579773340-product-thumb-image.jpg" class="cart-product-image">
+                              </a>
+                            </div>
+
+                            <div class="col-md-10">
+
+
+                                <div class="col-md-12 margin-bottom-5">
+                                    <span class="cart-title upper-case" style="margin-left:15px;">
+                                            <a href="https://sproboticworks.com/shop/codey.html">
+                                               اردویینو یونو
+                                            </a>
+                                        
+                                    </span>
+                                </div>
+
+                                 <div class="col-md-12 margin-bottom-5" style="margin-left:15px;">
+                                  <span>hh</span>
+                                                                                                          
+                                  </div>
+
+
+                                  <div class="col-md-12">
+                                      <span style="margin-left:15px;">
+                                          <a onclick="validateEventProductOrNot(135934)" href="javascript:void(0)">
+                                              Remove
+                                          </a>
+                                      </span>
+                                      
+                                  </div>
+
+
+                            </div>
+                            
+
+
+                        </td>
+
+
+                        <td>
+                                      <div class="cart-price price shopping-cart-table-middle" style="padding-left:0">
+                                                                                      INR
+                                          <span class="item_unit_price">
+                                                                                           19,999.00
+                                                                                  </span></div>
+                        </td>
+
+
+                        <td>
+                                      <form class="pull-right col-md-11" style="padding: 0;" siq_id="autopick_9177">
+                                          <input type="number" name="quantity" class="form-control shopping-cart-table-end product_quantity_12" id="product_quantity_12" min="1" max="25" onkeydown="onKeyPressed(event, 12, 100510)" value="1" onchange="changeQuantity(12, 100510, this.value)" style="margin-left: -7px;">
+                                      </form>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
                  
             </div>
 
             <div class="col-md-12 col-xl-10 m-auto">
                 
-            
             </div>
-
-            
-
-
         </div>
     </section>
 
+    <section>
+      <div class="container"></div>
+    </section>
    
 
 
