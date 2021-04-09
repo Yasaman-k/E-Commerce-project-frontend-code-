@@ -104,27 +104,46 @@
     <section class="mbr-section mbr-after-navbar mt-3 " style="padding-top: 0;padding-bottom:0; margin-bottom:200px">
         <div class="container">    
                 <div class="row my-5 d-flex justify-content-center">
-
-                    <div class="rounded-2 bg-blue shadow-1 col-xl-4 col-lg-5 col-md-6 col-sm-12 col-12">
-                        <div class="online-login-section  p-4 pb-5">
+                    <div class="rounded-2 bg-blue shadow-1 col-xl-6 col-lg-5 col-md-6 col-sm-12 col-12">
+                        <div class="online-login-section p-4 pb-5">
                             <h3 class="mb-3 text-light text-center fw-bold text-dark">ثبت نام</h3>
                             <form autocomplete="off" id="login_form_id" class="form-signin" method="post">
-                                <input class="" type="hidden" name="_token" >
 
-                                <div class="mb-3 form-group">
-                                    <input type="text" name="user_name" class="form-control" placeholder=" نام و نام خانوادگی" required="">
+                                <div class="row">
+                                    <div class="mb-3 form-group col-md-6">
+                                      <input type="text" name="user_name" class="form-control" placeholder=" نام و نام خانوادگی" required="">
+                                    </div>
+
+                                    <div class="mb-3 form-group col-md-6" >
+                                        <input type="tel" name="tel" class="form-control" placeholder="شماره موبایل" required="">
+                                    </div>
                                 </div>
 
-                                <div class="mb-3 form-group">
-                                    <input type="tel" name="tel" class="form-control" placeholder="شماره موبایل" required="">
-                                </div>
+                               <div class="row">
+                                <div class="mb-3 form-group col-md-6">
+                                  <input type="text" name="code_m" pattern="[0-9]{10}" class="form-control" placeholder="کد ملی " required="">
+                              </div>
+                              <div class="mb-3 form-group col-md-6">
+                                <input type="text" name="code_p" class="form-control" placeholder="کد پستی  " required="">
+                            </div>
+                               </div>
+
+                              <div class="mb-3 form-group">
+                                <input type="text" name="add"  class="form-control" placeholder="آدرس  " required="">
+                            </div>
+
+                              
 
                                 <div class="mb-3 rounded-0 shadow-lg form-group">
-                                    <input type="text" name="email" class="form-control" placeholder="ایمیل" required="">
+                                    <input type="email" name="email" class="form-control" placeholder="ایمیل" required="">
                                 </div>
 
                                 <div class="mb-3 form-group">
                                     <input type="password" name="password" class="form-control" placeholder="رمز عبور" required="">
+                                </div>
+
+                                <div class="mb-3 form-group">
+                                    <input type="password" name="password" class="form-control" placeholder="تکرار رمز عبور " required="">
                                 </div>                  
 
                                 <div class="mb-3 form-group">
