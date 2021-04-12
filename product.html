@@ -234,12 +234,23 @@
                 <div class="col-md-9 col-sm-12 col-xs-12 expand-external-width">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="row">
-                            <div class="col-md-5 col-sm-5 col-xs-12 slider-max-width">   
-                                <div class="focusItem image_expand contain-width p-3" style="display: block;">
-                                    <a href="#">
-                                        <img src="img/raspberry-pi-3-model-b-1.jpg" class=" img-fluid" alt="">
-                                    </a>
+                            <div class="col-md-5 col-sm-5 col-xs-12 ">
+                               
+                               
+                                             
+                                <div class="mt-5" >
+                                    <img class="thumb-image" id="ss" src="https://unsplash.it/289/165?image=882"/>
+                                    
+                                  
+                                        <span onclick="this.parentElement.style.display='none'" >
+                                          
+                                        
+                                        </span>
+                                        <img id="expandedImg" class="img-fluid" style="height:100%">
+                                        <div id="imgtext"></div>
+
                                 </div>
+                                
                             </div>
 
 
@@ -319,34 +330,90 @@
 
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="row">
-                                        <div class="col-md-5 mb-5">
-                                            <form id="cart_form" >
-                                                <button type="submit" class="mt-4 btn btn-success rounded-0 full-width add-cart-btn">
+                                        <div class="col-md-5 col-sm-6   mb-5">
+                                            <form id="" >
+                                                <button type="submit" class="mt-4  btn btn-success rounded-0 full-width add-cart-btn">
+                                                        افزودن به سبد خرید
+                                                </button>
+                                                
+                                            </form>
+                                        </div>
+                                        
+                                        <div class="col-md-7 col-sm-6  p-0 mb-5">
+                                            <form id="" class="mx-0 my-0" >
+                                                <button type="submit" class="mt-4  btn btn-success rounded-0 full-width add-cart-btn">
                                                         افزودن به سبد خرید
                                                 </button>
                                             </form>
-                                        </div>                                                                                                                                                                                       </div>
+                                        </div>   
+                                                                                                                                                                                                                        </div>
                                     </div>
                             </div>
 
                         </div>
+
+                        <div  class=" mb-3 row">                        
+                            <div class="container container1">
+    
+                                <ul class="thumbnails ">
+                                    <li>                                    
+                                        <div class="item-hugger">
+                                            
+                                            <img class="thumb-image" src="https://unsplash.it/289/165?image=882"
+                                            
+                                            style="width:100%" onclick="myFunction(this);"
+                                            />
+                                          
+                                        </div>
+                                    </li>
+
+                                    <li class="is-active">                                   
+                                        <div class="item-hugger">
+                                        
+                                            <img class="thumb-image" src="https://unsplash.it/289/165?image=782" 
+                                            style="width:100%" onclick="myFunction(this);"/>
+                                         
+                                        </div>          
+                                    </li>
+
+                                    <li>
+                                        <div class="item-hugger">
+                                        
+                                            <img class="thumb-image" src="https://unsplash.it/289/165?image=682"
+                                            style="width:100%" onclick="myFunction(this);" />
+                                        
+                                        </div>                               
+                                    </li>
+
+                                    <li>
+                                   
+                                        <div class="item-hugger">
+                                        
+                                            <img class="thumb-image" src="https://unsplash.it/289/165?image=582" 
+                                            style="width:100%" onclick="myFunction(this);"/>
+                                        
+                                        </div>
+                                
+                                    </li>
+                                </ul>
+
+                            </div>
+    
+                        </div>
                     </div>
 
 
-                    <div  class="carpusell bg-warning mb-3 row">
-                        <p>this is some picture for slider</p>
-
-                    </div>
+                 
 
                     <div class="row">
-                        <section class="container" style="">
+                        <section class="container">
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
                                 <a class="nav-link active" style="border-top:1px solid black !important ;" aria-current="page" href="#">توضیحات</a>
                                 </li>          
                             </ul>
                             <div class="mt-3 border-1 border-secondary border p-3 border-top-0">
-                                خیلی کارش درسته!
+                                برد رزبری پای به عبارت برخی از دوستان رسپبری پای Raspberry Pi یک مینی کامپیوتر امبدد است. برای راه اندازی برد Raspberry Pi نیاز به مموری Micro SD دارید. سیستم عامل رزبری پای (رسپبری پای) روی آن رایت می‌شود. بنیاد Raspberry Pi در سال 2016 از مدل رزبری پای زیرو Raspberry Pi Zero رونمایی کرد. در همین حال برد..
                             </div>
                                                 
                         </section>                       
@@ -428,6 +495,7 @@
   </footer>
   
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
 
