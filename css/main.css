@@ -3,6 +3,7 @@ html{
 }
 a{
     text-decoration: none;
+   
     color: black;
 }
 
@@ -51,8 +52,9 @@ ul{
     border-bottom: .4em solid transparent !important;
     border-left: 0px !important;
     left:30px;
-    margin-right: 100px !important;
+    /* margin-right: 100px !important; */
 } 
+
 
 .nav-tabs{
     border-bottom:1px solid black;
@@ -814,3 +816,38 @@ ul{
   }
 
 
+  .wave {
+    
+    height: 80%;
+    background: linear-gradient(70deg, #59aec3 50%, #a9c9c2 50%) !important;
+    border-radius: 15px;
+    
+  }
+.sh-l{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+  .kb{
+    box-shadow: 0px 10px 10px #e5b04f85;
+  }
+  /* #wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 20px;
+    height: 30px;
+    background-color: white;
+    right: -5px;
+    top: 40px;
+  }
+  #wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 10px;
+    height: 20px;
+    background-color: #e0efe3;
+    left: 0;
+    top: 10px;
+  } */
