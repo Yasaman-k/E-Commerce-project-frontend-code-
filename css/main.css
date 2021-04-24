@@ -865,3 +865,15 @@ ul{
     float: right !important;
     /* margin-right: -1.5em; */
   }
+
+  .customer-item {
+    background-color:#49565D;
+  }
+
+  .customer-item-name{
+      background-color: #2D3A42 ;
+      
+  }
+  .customer-item-h:hover{
+      background-color: cadetblue;
+  }
