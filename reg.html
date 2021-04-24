@@ -108,16 +108,25 @@
                     <div class="rounded-2 login-shadow col-xl-6 col-lg-5 col-md-6 col-sm-12 col-12">
                         <div class="online-login-section p-5 ">
                             
-                            <form autocomplete="off" id="login_form_id" class="form-signin" method="post">
+                            <form autocomplete="off" id="login_form_id" class="needs-validation" novalidate method="post" >
+
+                                <div class="row">
+                                    <div class="mb-3 form-group col-md-6 ">
+                                      <input type="text" name="user_name" class="form-control " placeholder=" نام" required="">
+                                    </div>
+                                    <div class="mb-3 form-group col-md-6">
+                                      <input type="text" name="user_name" class="form-control" placeholder=" نام خانوادگی" required="">
+                                    </div>
+                                </div>
 
                                 <div class="row">
                                     <div class="mb-3 form-group col-md-6">
-                                      <input type="text" name="user_name" class="form-control" placeholder=" نام و نام خانوادگی" required="">
-                                    </div>
+                                      <input type="email" name="email" class="form-control" placeholder="ایمیل" required="">
+                                  </div>
 
-                                    <div class="mb-3 form-group col-md-6" >
-                                        <input type="tel" name="tel" class="form-control" placeholder="شماره موبایل" required="">
-                                    </div>
+                                  <div class="mb-3 form-group col-md-6">
+                                    <input type="text" name="user_name" class="form-control" placeholder=" شماره موبایل" required="">
+                                  </div>
                                 </div>
 
                                <div class="row">
@@ -131,41 +140,53 @@
                                </div>
 
                                 <div class="row">
-                                 <div class="mb-3 form-group col-md-6">
-                                  <select name="" id="" class="form-control">
-                                    <optgroup label="استان">
-                                      <option value="">استان</option>
-                                      <option value=""></option>
-                                    </optgroup>
-                                  </select>
-                                </div>
 
-                                <div class="mb-3 form-group col-md-6">
-                                  <select name="" id="" class="form-control">
-                                    <optgroup label="شهر">
-                                      <option value="">شهر</option>
-                                      <option value=""></option>
-                                    </optgroup>
-                                  </select>
-                                </div>
+                                  <div class="mb-3 form-group col-md-6" >
+                                    <select class="form-select" aria-label="Default select example" >
+                                      <option selected>استان</option>
+                                      <option value="1">کرمان</option>
+                                      <option value="2">شیراز</option>
+                                      <option value="3">یزد</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="mb-3 form-group col-md-6">
+                                   <select class="form-select" aria-label="Default select example" >
+                                       <option selected>شهر</option>
+                                       <option value="1">کرمان</option>
+                                       <option value="2">شیراز</option>
+                                       <option value="3">یزد</option>
+                                     </select>
+                                  </div>
+
 
                                </div>
 
                               <div class="mb-3 form-group">
                                 <input type="text" name="add"  class="form-control" placeholder="آدرس  " required="">
-                            </div>
+                              </div>
 
-                                <div class="mb-3 form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="ایمیل" required="">
-                                </div>
+                            <div class="row">
+                              <div class="mb-3 form-group col-md-6">
+                                <input type="password" name="password" class="form-control" placeholder="رمز عبور" required=>
+                              </div>
 
-                                <div class="mb-3 form-group">
-                                    <input type="password" name="password" class="form-control" placeholder="رمز عبور" required="">
-                                </div>
-
-                                <div class="mb-3 form-group">
-                                    <input type="password" name="password" class="form-control" placeholder="تکرار رمز عبور " required="">
-                                </div>                  
+                              <div class="mb-3 form-group col-md-6">
+                                  <input type="password" name="password" class="form-control" placeholder="تکرار رمز عبور " required="">
+                              </div>    
+                            </div>     
+                            
+                          
+                              <div class="form-group  form-check mt-3">
+                                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                                <label class="form-check-label text-danger me-4" for="inlineFormCheck">
+                                  من را بخاطر بسپار.
+                                </label>
+                                
+                                
+                              </div>
+                            
+                          
 
                              <div class="row">
                                 <div class="mb-3 mt-4 form-group m-auto col-md-6 rounded-1">                     

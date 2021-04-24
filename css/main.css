@@ -857,5 +857,11 @@ ul{
     top: 10px;
   } */
 
+  .form-select{
+    background-position: left .75rem center;
+  }
 
-  
+  .form-check .form-check-input {
+    float: right !important;
+    /* margin-right: -1.5em; */
+  }
