@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+ 
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+
 </head>
 
 <body>
@@ -72,14 +76,16 @@
                     <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav  mb-2 mb-lg-0 ">
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">          
-                                
-                                <a type="button" class="" data-toggle="modal" data-target="#cart">
+                            <a class="nav-link" href="#">                                   
+                                <a href="faktor.html" class="" data-toggle="modal" data-target="#cart">
                                     <i class="fa fa-shopping-cart" style="font-size:18px;" aria-hidden="true"></i>
+                                    <!-- shopingicon -->
                                     (<span class="total-count"></span>)
                                 </a>
                             </a>
                         </li>
+  
+
                         <li class="nav-item px-3">
                             <a class="nav-link" href="#">درباره ی ما</a>
                         </li>
@@ -96,6 +102,8 @@
                     </div>
 
                     <a class="me-auto  navbar-brand fs-2 ps-5" style="color: #00cdfe;" href="#">روبوفروشآنلاین</a>
+
+
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -380,6 +388,8 @@
                                             
                                         <!-- </form> -->
                                     </div>
+
+
                                     
                                     <!-- <div class="col-md-7 col-sm-6  p-0 mb-5">
                                         <form id="" class="mx-0 my-0" >
@@ -444,31 +454,127 @@
 
                     </div>          
 
-                     <div class="row ">
+                     <div class="row mb-5">
                         <section class="container">
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
-                                <p class="nav-link active" style="border-top:1px solid black !important ;" > ویژگی های: STM32F103C8T6</p>
+                                <p class="nav-link active bg-light" style="border-top:1px solid black !important ;" > ویژگی های: STM32F103C8T6</p>
                                 </li>          
                             </ul>
-                            <div class="mt-3 border-1 border-secondary border p-3 border-top-0">
+                            <div class="mt-1  p-3 border-top-0">
+                                <table id="dmtcategoryfeature" style="width:100%">
+                                    <h3>مشخصات تغذیه</h3>
+                                    <tbody id="dmtcategoryfeature_inner">               
+                                            <tr class="features bg-light">          
+                                                <td class="feature_name" >نوع تغذیه :</td>
+                                                <td class="feature_value"  >تغذیه تکی</td>                      
+                                            </tr>
+                                    
+                                            <tr class="features ">
+                                                <td class="feature_name w-50">حداقل ولتاژ تغذیه تکی  (ولت) :</td>                                
+                                                <td class="feature_value">2</td>                     
+                                            </tr>
                                 
+                                            <tr class="features bg-light ">             
+                                                <td class="feature_name ">حداکثر ولتاژ تغذیه تکی (ولت) :</td>                       
+                                                <td class="feature_value">3.6</td>                    
+                                            </tr>      
+                                    </tbody>
+                                </table>
+
                             </div>                                          
                         </section>                       
                     </div>
 
-                    <div class="row mt-4">
-                        <section class="container">
+                    <div class="row ">
+                        <section class="container my-5 ">
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
                                 <p class="nav-link active" style="border-top:1px solid black !important ;">توضیحات</p>
                                 </li>          
                             </ul>
-                            <div class="mt-3 border-1 border-secondary border p-3 border-top-0">
+                            <div class="mt-3  p-3 border-top-0">
                                 آی سیSTM32F103C8T6یک میکروکنترلر با هسته پردازندهARM® Cortex®-M3و فرکانس کاری72مگاهرتز از نوع SMDبا پکیجLQFP-48می باشد.
                             </div>                                          
                         </section>                       
                     </div>
+
+                    <div class="row ">
+                        <section class="container my-5">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                <p class="nav-link active bg-light" style="border-top:1px solid black !important ;">ارسال نظر</p>
+                                </li>          
+                            </ul>
+
+                            <div class="mt-3 border-secondary  p-3 border-top-0">
+                                <form action="" class="mx-5">
+                                    <div class="row">
+                                        <div class="mb-3 form-group col-md-4">
+                                            <input type="text" name="user_name" class="form-control" style="background-color: #EBF5F7;" placeholder=" نام" required="">
+                                          </div>
+                                          <div class="mb-3 form-group col-md-8">
+                                            <input type="text" name="user_name" class="form-control" style="background-color: #EBF5F7;" placeholder="ایمیل" required="">
+                                          </div>
+                                    </div>
+
+                                    <div class="row ">
+                                       <div class="col form-group ">
+                                        <textarea name="" id="" class="form-control "  rows="5" style="background-color: #EBF5F7;">
+
+                                        </textarea>
+                                       </div>
+                                    </div>
+
+                                
+                             <div class="row">
+                                <div class="mb-3 mt-3  form-group  col-md-3 rounded-1">                     
+                                    <button class="btn btn-md btn-success text-light w-100" type="submit" id="login_button" style="text-transform: uppercase;"> 
+                                              ارسال
+                                  </button>
+                                </div>
+                             </div>
+
+                                </form>
+                            </div> 
+
+                        </section>                       
+                    </div>
+                    <hr>
+
+                    <div class="row ">
+                       
+                        <div class="container mb-3">
+        
+
+                            <div class="mt-3 ">
+                                <form action="" class="mx-5">
+                                    <div class="row ">
+                                       <div class="col form-group ">
+                                        <textarea name="" id="" class="form-control "  rows="3" >محصول عالی بود
+                                        </textarea>
+                                       </div>
+                                    </div>
+                                </form>
+                            </div> 
+
+                            <div class="mt-3 ">
+                                <form action="" class="mx-5">
+                                    <div class="row ">
+                                       <div class="col form-group ">
+                                        <textarea name="" id="" class="form-control "  rows="3" >محصول عالی بود
+                                        </textarea>
+                                       </div>
+                                    </div>
+                                </form>
+                            </div> 
+
+
+
+                        </div>                       
+                    </div>
+
+                    
 
                    
 
@@ -548,7 +654,7 @@
   </footer>
 
   <script src="js/main.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
     
 </body>
 </html>

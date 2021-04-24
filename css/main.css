@@ -826,6 +826,11 @@ ul{
 .sh-l{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+.card-sub:hover{
+    cursor:pointer;
+    margin:13px !important;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+}
   .kb{
     box-shadow: 0px 10px 10px #e5b04f85;
   }
@@ -851,3 +856,6 @@ ul{
     left: 0;
     top: 10px;
   } */
+
+
+  

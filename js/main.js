@@ -68,7 +68,8 @@
 // Shopping Cart API
 // ************************************************
 
-var shoppingCart = (function() {
+var shoppingCart = (function() 
+{
   // =============================
   // Private methods and propeties
   // =============================
@@ -199,9 +200,14 @@ var shoppingCart = (function() {
   // saveCart : Function
   // loadCart : Function
   return obj;
-})();
+}
+)  
+
+();
 
 
+
+// helow
 // *****************************************
 // Triggers / Events
 // ***************************************** 
@@ -272,3 +278,4 @@ $('.show-cart').on("change", ".item-count", function(event) {
 });
 
 displayCart();
+
