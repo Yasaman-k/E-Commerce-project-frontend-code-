@@ -9,215 +9,303 @@
     <!-- <link rel="stylesheet" href="fontaw/css/font-awesome.min.css"> -->
     <link href="fontaw/css/all.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/all.css"> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
+  <header>
+  <!-- navbars -->
+  <section id="ext_menu-3">
+      <nav>
+          <div class="navbar navbar-dropdown pb-0 navbar-expand">
+              <div class="container-fluid  login-inner">    
+                  <ul class="navbar-nav">
+      
+                    <li class="nav-item ">
+                          <span id="view_multi_lang" >      
+                              <select class="form-select form-select-sm px-2" aria-label=".form-select-sm example"
+                              style="padding-left: 30px !important; " >
+                                  <option value="FA" >فا</option>
+                                  <option value="En">EN</option>
+                                  <option value="DUE">DU</option> 
+                              </select>
+                          </span>              
+                    </li>
+      
+                    <li class="nav-item">
+                      <span id="guest_user_div">
+                          <span class="m-2 login-sp"> | </span>
+          
+                          <span>
+                              <a href="login.html" class="m-2 login-sp header-ga ga-trackable">
+                                  ورود
+                              </a>
+                          </span>
+          
+                          <span class="login-sp"> | </span>
+          
+                          <span>
+                              <a href="login.html" data-ga-label="Menu"  class="m-2 login-sp header-ga ga-trackable">
+                              ثبت نام
+                              </a>
+                          </span>            
+                      </span>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <span style="font-family: 'IRANSans';font-size: 13px;padding-right: 20px;color: #777;" class="hide-shop-slider">
+                          <i class="fas fa-phone-volume"></i>
+                          شماره پشتیبانی: ۰۹۱۳۳۳۳۳۳۳
+                      </span>          
+                    </li>             
+                  </ul>
+                
+              </div>        
+          </div>
 
-    <section id="ext_menu-3">
-        <nav>
-            <div class="navbar navbar-dropdown pb-0 navbar-expand">
-                <div class="container-fluid  login-inner">    
-                    <ul class="navbar-nav">       
-                      <li class="nav-item">
-                            <span id="view_multi_currency" >      
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                    <option value="FA">فا</option>
-                                    <option value="En">EN</option>
-                                    <option value="DUE">DU</option> 
-                                </select>
-                            </span>              
-                      </li>
-        
-                      <li class="nav-item">
-                        <span id="guest_user_div">
-            
-                            <span>
-                                <a href="userpanel.html" class="m-2 login-sp header-ga ga-trackable">
-                                    حساب کاربری
-                                </a>
-                            </span>
-                      
-                        </span>
-
-                      </li>
-                      
-                      <li class="nav-item">
-                        <span style="font-family: 'IRANSans';font-size: 13px;padding-right: 20px;color: #777;" class="hide-shop-slider">
-                            <i class="fas fa-phone-volume"></i>
-                            شماره پشتیبانی: ۰۹۱۳۳۳۳۳۳۳
-                        </span>        
-                      </li>               
-                    </ul>
-                </div>             
-            </div>
-            <div class="navbar navbar-expand-lg p-0 navbar-light">
+          <div class="navbar navbar-expand-lg p-0 navbar-light">
                 <div class="container">
                     <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav  mb-2 mb-lg-0 ">
-                          <li class="nav-item px-3">
-                            <a class="nav-link" href="#">          
-                                <i class="fa fa-shopping-cart" style="font-size:18px;" aria-hidden="true"></i>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">                                   
+                                <a href="faktor.html" class="" data-toggle="modal" data-target="#cart">
+                                    <i class="fa fa-shopping-cart" style="font-size:18px;" aria-hidden="true"></i>
+                                    <!-- shopingicon -->
+                                    (<span class="total-count"></span>)
+                                </a>
                             </a>
-                          </li>
-                          <li class="nav-item px-3">
+                        </li>
+  
+
+                        <li class="nav-item px-3">
                             <a class="nav-link" href="#">درباره ی ما</a>
-                          </li>
-                          <li class="nav-item px-3">
+                        </li>
+                        <li class="nav-item px-3">
                             <a class="nav-link" href="#">تماس با ما</a>
-                          </li>
-                          <li class="nav-item px-3">
+                        </li>
+                        <li class="nav-item px-3">
                             <a class="nav-link" href="#">خانه</a>
-                          </li>
-                          <li class="nav-item px-3">
+                        </li>
+                        <li class="nav-item px-3">
                             <a class="nav-link" href="#">بلاگ</a>
-                          </li>
-                        </ul>
-                      
+                        </li>
+                        </ul>              
+                    </div>
+
+                    <a class="me-auto  navbar-brand fs-2 ps-5" style="color: #00cdfe;" href="#">روبوفروشآنلاین</a>
+
+
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                </div>
+          </div>
+      </nav>
+  </section>
+  <!-- navbars -->
+
+  <!-- search -->
+  <section class="mbr-section mbr-after-navbar bg-dark">
+      <div class="container-fluid contuct-title-bg" >
+          <div class="container">
+              <div class="col-md-12 col-sm-12 col-xs-12 col-xl-8 m-auto ">
+                  <div class="row">
+                      <div class="product_search">
+                          <form  class=""  method="get" style="direction: ltr;">
+                              <div class="input-group flex-nowrap">
+                                  <span class="input-group-text" id="addon-wrapping"> <i class="fa fa-search fa-lg"></i></span>
+                                  <input type="text" class="form-control" style="direction: rtl;" placeholder="جست و جوی محصول.."
+                                  aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section> 
+   <!-- /search -->
+
+  </header>
+
+  <main>
+    <section class="mbr-section mbr-after-navbar " style="padding-top: 0;padding-bottom:0">
+      <div class="container">    
+          <div class="col-md-12 col-lg-12 col-xl-12 m-auto">
+              <div class="row">
+                <div class="col-md-3  p-0  customer-item" style="padding-bottom: 500px !important;">
+
+                      <div class="d-flex customer-item-name text-light p-3">                    
+                        <img src="img/avatar.png" class="img-fluid p-0" width="50px" height="50px" alt="">                     
+                        <div class="pe-2   my-auto ">
+                          <p class="fs-4 fw-bold p-0 m-0">یاسمن کرباسی</p>
+                          <p class="p-0 m-0 text-info">مدیر سایت</p>
+                        </div>
+                        
+                      </div>
+                      <div>
+                        
                       </div>
 
-                  <a class="me-auto  navbar-brand fs-2 ps-5" style="color: #00cdfe;" href="#">روبوفروشآنلاین</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                  aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-            </div>
-        </nav>
-    </section>
-
-    <section class="mbr-section mbr-after-navbar bg-dark">
-        <div class="container-fluid contuct-title-bg" >
-            <div class="container">
-                <div class="col-md-12 col-sm-12 col-xs-12 col-xl-8 m-auto ">
-                    <div class="row">
-                        <div class="product_search">
-                            <form  class=""  method="get" style="direction: ltr;">
-                                <div class="input-group flex-nowrap">
-                                    <span class="input-group-text" id="addon-wrapping"> <i class="fa fa-search fa-lg"></i></span>
-                                    <input type="text" class="form-control" style="direction: rtl;" placeholder="جست و جوی محصول.."
-                                     aria-label="Username" aria-describedby="addon-wrapping">
-                                  </div>
-                            </form>
+                      <div class="fs-5 overflow-hidden">
+                        <div class="customer-item-h pt-2 pb-2">
+                          <a href="#" onclick="openCity(event, 'edit-info')"  class="text-light pe-3 tablinks">ویرایش اطلاعات</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
-    
 
-
-    <section class="mbr-section mbr-after-navbar mt-3 mb-5" style="padding-top: 0;padding-bottom:0">
-        <div class="container">    
-
-
-            <div class="col-md-12 col-xl-10 m-auto  ">
-                <div class="row">
-                  <div class="col-md-3 px-3">
-
-                        <div class="d-flex ">                    
-                          <img src="img/avatar.png" class="img-fluid" width="50px" height="50px" alt="">                     
-                          <p class="fs-4 fw-bold p-0 mt-2 m-0 me-3">یاسمن کرباسی</p>
-                         
+                        <div  class="customer-item-h pt-2 pb-2 ">
+                          <a href="#" class="text-light pe-3">اضافه کردن محصول </a>
                         </div>
-                         <p class="me-5">مدیر</p>
+                        
+                        <div class="customer-item-h py-2 ">
+                          <a href="#" class="text-light pe-3">  دسته بندی</a>
+                        </div>
 
-                      <hr>
+                        <div class="customer-item-h py-2 ">
+                          <a href="#" onclick="openCity(event, 'edit-pass')" class="text-light pe-3 tablinks">  تغییر رمز عبور</a>
+                        </div>
 
-                     <div class="fs-5">
-                        <p class="">  اضافه کردن دسته بندی محصول</p>
-                        <p class=""> اضافه کردن محصول</p>
-                        <p class="">  </p>
+                        <div class="customer-item-h py-2 ">
+                          <a href="#" class="text-light pe-3">  خروج</a>
+                        </div>
+
+                      </div>
+
+                </div>
+
+                <div class="col-md-9 tabcontent" id="edit-info"  style="display: none;">
+                  <div class="row">
+                    <div class="col-7 m-auto">
+                      <form autocomplete="off" id="login_form_id" class="mt-5 pt-5" novalidate method="post" >
+
+                        <div class="row">
+                            <div class="mb-3 form-group col-md-6 ">
+                              <input type="text" name="user_name" class="form-control " placeholder=" نام" required="">
+                            </div>
+                            <div class="mb-3 form-group col-md-6">
+                              <input type="text" name="user_name" class="form-control" placeholder=" نام خانوادگی" required="">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="mb-3 form-group col-md-6">
+                              <input type="email" name="email" class="form-control" placeholder="ایمیل" required="">
+                          </div>
+
+                          <div class="mb-3 form-group col-md-6">
+                            <input type="text" name="user_name" class="form-control" placeholder=" شماره موبایل" required="">
+                          </div>
+                        </div>
+
+                       <div class="row">
+                        <div class="mb-3 form-group col-md-6">
+                          <input type="text" name="code_m" pattern="[0-9]{10}" class="form-control" placeholder="کد ملی " required="">
+                        </div>
+
+                        <div class="mb-3 form-group col-md-6">
+                          <input type="text" name="code_p" class="form-control" placeholder="کد پستی  " required="">
+                        </div>
+                       </div>
+
+                        <div class="row">
+
+                          <div class="mb-3 form-group col-md-6" >
+                            <select class="form-select" aria-label="Default select example" >
+                              <option selected>استان</option>
+                              <option value="1">کرمان</option>
+                              <option value="2">شیراز</option>
+                              <option value="3">یزد</option>
+                            </select>
+                          </div>
+
+                          <div class="mb-3 form-group col-md-6">
+                           <select class="form-select" aria-label="Default select example" >
+                               <option selected>شهر</option>
+                               <option value="1">کرمان</option>
+                               <option value="2">شیراز</option>
+                               <option value="3">یزد</option>
+                             </select>
+                          </div>
+
+
+                       </div>
+
+                      <div class="mb-3 form-group">
+                        <input type="text" name="add"  class="form-control" placeholder="آدرس  " required="">
+                      </div>
+                
+                     <div class="row">
+                        <div class="mb-3 mt-4 form-group m-auto col-md-6 rounded-1">                     
+                            <button class="btn btn-md btn-submit text-light w-100" type="submit" id="login_button" style="text-transform: uppercase;"> 
+                                      ثبت اطلاعات
+                          </button>
+                        </div>
                      </div>
 
+
+                    </form>
+                    </div>
                   </div>
 
-                  <div class="col-md-9 ">
-                      <div class="d-flex mt-4">
-                          <p class="fs-6"> ایمیل    :  </p>
-                          <p class="fs-6">   y.k.r7713@gmail.com </p>
-                         
-                      </div>
-                       <a href="#" class="text-primary">تغییر رمز عبور</a>   
-                  </div>
-                 
-                </div>            
-            </div>
-
-        </div>
-    </section>
-
-   
-
-
-    <footer class="container-fluid bg-dark text-white py-5 pb-0">
-        <div class="container py-1">
-          <div class="row">
-              <div class="col-6 col-md">
-                <h5 class="mb-3"> خبرنامه </h5>
-                <p class="text-secondary">برای اطلاع از خبر ها ثبت نام کنید</p>
-                <div class=" input-group  flex-nowrap mb-3" style="direction:ltr; width:80% !important;" >
-                  <button class="input-group-text ">
-                      <i class="bi bi-arrow-left-circle-fill"></i> 
-                    </button>
-                  <input type="text" style="direction:rtl; width:80% !important;"  class="bg-dark form-control text-light" placeholder="ایمیل شما" >
                 </div>
-              </div>
-      
-              <div class="col-6 col-md">   
-                <ul class="list-unstyled text-small">
-                  <li class="mb-3"><h5 class="link-light">فروش</h5></li>
-                  <li class="my-2"><a class="link-secondary " href="#">انتقاد</a></li>
-                  <li class="my-2"><a class="link-secondary" href="#">Education</a></li>
-                  <li class="my-2"><a class="link-secondary" href="#">Government</a></li>
-                  <li class="my-2"><a class="link-secondary" href="#">Gaming</a></li>
-                </ul>
 
-                <ul class="list-unstyled text-small">
-                    <li class="mb-3"><h5 class="link-light">ما را دنبال کنید</h5></li>
-                    <li class="">    
-                        <ul class="list-unstyled fs-5 m-0 p-0 list-inline">
-                            <li class="my-2 list-inline-item"><a class="link-light" href="#"><i class="bi bi-youtube"></i></i></a></li> 
-                            <li class="my-2 list-inline-item"><a class="link-light" href="#"><i class="bi bi-instagram"></i></a></li>
-                            <li class="my-2 list-inline-item"><a class="link-light" href="#"><i class="bi bi-telegram"></i></a></li>
-                            <li class="my-2 list-inline-item"><a class="link-light" href="#"><i class="bi bi-linkedin"></i></a></li>                              
-                        </ul>     
-                    </li>
-                  </ul>            
-              </div>
-      
-              <div class="col-6 col-md">   
-                <ul class="list-unstyled text-small">
-                  <li class="mb-3"><h5 class="link-light">فروش</h5></li>
-                  <li class="my-2"><a class=" link-secondary " href="#">انتقاد</a></li>
-                  <li class="my-2"><a class="link-secondary" href="#">Education</a></li>
-                  <li class="my-2"><a class="link-secondary" href="#">Government</a></li>
-                  <li class="my-2"><a class="link-secondary" href="#">Gaming</a></li>
-                </ul>
-              </div>
-      
-              <div class="col-6 col-md">   
-                <ul class="list-unstyled text-small">
-                  <li class="mb-3"><h5 class="link-light">فروش</h5></li>
-                  <li class="my-2"><a class=" link-secondary " href="#">انتقاد</a></li>
-                  <li class="my-2"><a class="link-secondary" href="#">Education</a></li>
-                  <li class="my-2"><a class="link-secondary" href="#">Government</a></li>
-                  <li class="my-2"><a class="link-secondary" href="#">Gaming</a></li>
-                </ul>
-              </div>
-      
-      
-            </div>
-          <div class="dropdown-divider bg-light"></div>
+                <div class="col-md-9 tabcontent"  id="edit-pass" style="display: none;">
+                  <div class="row">
+                    <div class="col-7 m-auto">
+                      <form autocomplete="off" id="login_form_id" class="mt-5 pt-5" novalidate method="post" >
+                        <div class="mb-3 form-group col-md-6">
+                          <input type="password" name="password" class="form-control" placeholder=" رمز عبور فعلی" required=>
+                        </div>
+                
+                        <div class="mb-3 form-group col-md-6">
+                          <input type="password" name="password" class="form-control" placeholder=" رمز عبور جدید" required=>
+                        </div>
 
-         <p style="direction: ltr;"> Copyright © SP ROBOTIC WORKS. All Rights Reserved.</p>
-        </div>
-    </footer>
-  
+                        <div class="mb-3 form-group col-md-6">
+                            <input type="password" name="password" class="form-control" placeholder="تکرار رمز عبور جدید " required="">
+                        </div>   
+                     
+                        <div class="mb-3 form-group col-md-6 rounded-1">                     
+                            <button class="btn btn-md btn-submit text-light w-100" type="submit" id="login_button" style="text-transform: uppercase;"> 
+                                      ثبت اطلاعات
+                          </button>
+                        </div>
+                    </form>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-9">
+                  
+                </div>
+
+              </div>            
+          </div>
+
+      </div>
+  </section>
+
+  </main>
+   
+<!-- footer -->
+  <footer class="container-fluid bg-dark text-white pt-2">
+    <div class="container">
+     <div class="row">
+      <p > کلیه حقوق این سایت متعلق به شرکت <strong class="text-info">روبوفروش آنلاین</strong>  می‌باشد.</p>
+     </div>
+    </div>
+  </footer>
+<!-- footer -->
     
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
 

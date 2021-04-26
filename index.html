@@ -23,10 +23,11 @@
               <div class="container-fluid  login-inner">    
                   <ul class="navbar-nav">
       
-                    <li class="nav-item">
-                          <span id="view_multi_currency" >      
-                              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                  <option value="FA">فا</option>
+                    <li class="nav-item ">
+                          <span id="view_multi_lang" >      
+                              <select class="form-select form-select-sm px-2" aria-label=".form-select-sm example"
+                              style="padding-left: 30px !important; " >
+                                  <option value="FA" >فا</option>
                                   <option value="En">EN</option>
                                   <option value="DUE">DU</option> 
                               </select>
@@ -46,7 +47,7 @@
                           <span class="login-sp"> | </span>
           
                           <span>
-                              <a href="reg.html" data-ga-label="Menu"  class="m-2 login-sp header-ga ga-trackable">
+                              <a href="login.html" data-ga-label="Menu"  class="m-2 login-sp header-ga ga-trackable">
                               ثبت نام
                               </a>
                           </span>            
@@ -65,39 +66,49 @@
           </div>
 
           <div class="navbar navbar-expand-lg p-0 navbar-light">
-              <div class="container">
-                  <div class="collapse navbar-collapse" id="navbarText">
-                      <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 ">
                         <li class="nav-item px-3">
-                          <a class="nav-link" href="#">          
-                              <i class="fa fa-shopping-cart" style="font-size:18px;" aria-hidden="true"></i>
-                          </a>
+                            <a class="nav-link" href="#">                                   
+                                <a href="faktor.html" class="" data-toggle="modal" data-target="#cart">
+                                    <i class="fa fa-shopping-cart" style="font-size:18px;" aria-hidden="true"></i>
+                                    <!-- shopingicon -->
+                                    (<span class="total-count"></span>)
+                                </a>
+                            </a>
+                        </li>
+  
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">درباره ی ما</a>
                         </li>
                         <li class="nav-item px-3">
-                          <a class="nav-link" href="#">درباره ی ما</a>
+                            <a class="nav-link" href="#">تماس با ما</a>
                         </li>
                         <li class="nav-item px-3">
-                          <a class="nav-link" href="#">تماس با ما</a>
+                            <a class="nav-link" href="#">خانه</a>
                         </li>
                         <li class="nav-item px-3">
-                          <a class="nav-link" href="#">خانه</a>
+                            <a class="nav-link" href="#">بلاگ</a>
                         </li>
-                        <li class="nav-item px-3">
-                          <a class="nav-link" href="#">بلاگ</a>
-                        </li>
-                      </ul>              
+                        </ul>              
                     </div>
 
-                <a class="me-auto  navbar-brand fs-2 ps-5" style="color: #00cdfe;" href="#">روبوفروشآنلاین</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
+                    <a class="me-auto  navbar-brand fs-2 ps-5" style="color: #00cdfe;" href="#">روبوفروشآنلاین</a>
+
+
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                </div>
           </div>
       </nav>
-    </section>
-    <!-- /navbars -->
+  </section>
+  <!-- navbars -->
 
   <!-- search -->
   <section class="mbr-section mbr-after-navbar bg-dark">
@@ -109,7 +120,7 @@
                           <form  class=""  method="get" style="direction: ltr;">
                               <div class="input-group flex-nowrap">
                                   <span class="input-group-text" id="addon-wrapping"> <i class="fa fa-search fa-lg"></i></span>
-                                  <input type="search" class="form-control" style="direction: rtl;" placeholder="جست و جوی محصول.."
+                                  <input type="text" class="form-control" style="direction: rtl;" placeholder="جست و جوی محصول.."
                                   aria-label="Username" aria-describedby="addon-wrapping">
                                 </div>
                           </form>
@@ -119,7 +130,7 @@
           </div>
       </div>
   </section> 
-  <!-- /search -->
+   <!-- /search -->
 
   <!-- advertising -->
   <section class="mbr-section mbr-after-navbar my-4" style="padding-top: 0;padding-bottom:0">
