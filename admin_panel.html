@@ -143,15 +143,11 @@
                 <div class="col-md-3  p-0  customer-item" style="padding-bottom: 500px !important;">
 
                       <div class="d-flex customer-item-name text-light p-3">                    
-                        <img src="img/avatar.png" class="img-fluid p-0" width="50px" height="50px" alt="">                     
-                        <div class="pe-2   my-auto ">
-                          <p class="fs-4 fw-bold p-0 m-0">یاسمن کرباسی</p>
-                          <p class="p-0 m-0 text-info">مدیر سایت</p>
-                        </div>
-                        
-                      </div>
-                      <div>
-                        
+                          <img src="img/avatar.png" class="img-fluid p-0" width="50px" height="50px" alt="">                     
+                          <div class="pe-2   my-auto ">
+                            <p class="fs-4 fw-bold p-0 m-0">یاسمن کرباسی</p>
+                            <p class="p-0 m-0 text-info">مدیر سایت</p>
+                          </div>                 
                       </div>
 
                       <div class="fs-5 overflow-hidden">
@@ -164,7 +160,7 @@
                         </div>
                         
                         <div class="customer-item-h py-2 ">
-                          <a href="#" class="text-light pe-3">  دسته بندی</a>
+                          <a href="#" onclick="openCity(event, 'edit-cat')" class="text-light pe-3">  دسته بندی</a>
                         </div>
 
                         <div class="customer-item-h py-2 ">
@@ -282,9 +278,53 @@
 
                 </div>
 
-                <div class="col-md-9">
-                  
+                <div class="col-md-9 tabcontent"  id="edit-cat" style="display: none;">
+                  <div class="row">
+                    <div class="col-7 p-5   ">
+                        <form autocomplete="off" id="login_form_id" class="d-flex align-items-center flex-column" novalidate method="post" >                      
+                            <div class="mb-3 form-group col-md-6  ">
+                              <label class="fs-5 form-label" for="">نام دسته بندی</label>
+                            </div>
+  
+                            <div class="mb-3 form-group col-md-6">
+                                <input type="text" name="" class="form-control" placeholder="" required="">
+                            </div>   
+                        
+                            <div class="mb-3 form-group col-md-6 rounded-1">                     
+                                <button class="btn btn-md btn-submit text-light w-100" type="submit" id="login_button" style="text-transform: uppercase;"> 
+                                          ثبت 
+                              </button>
+                            </div>
+                      </form>
+                    </div>
+
+                  </div>
+
                 </div>
+
+                <div class="col-md-9 tabcontent"  id="-" style="">
+                  <div class="row">
+                    <div class="col-7 p-5">
+                      <table class="">
+    
+                        <tbody>
+                          <tr>
+                            <td class="fs-5 fw-bolder px-2">تراشه</td>
+                            <td><button class="btn btn-danger m-0">حذف</button></td>
+                            <td><button class="btn btn-success">ویرایش</button></td>
+                           
+                          </tr>
+                      
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                
 
               </div>            
           </div>
