@@ -885,8 +885,12 @@ body {
     background-color: #49565D;
 }
 
-.customer-item-name {
+.boss-item-name {
     background-color: #2D3A42;
+}
+
+.customer-item-name {
+    background-color: #40b5bc;
 }
 
 .customer-item-h:hover {
